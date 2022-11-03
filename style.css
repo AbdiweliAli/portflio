@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* 0px to 768px*/
+
+    body{
+        background-color: black;
+        color: white;
+    }
+    /* Hero style start */
+    .hero-image{
+        width: 100%;
+        height: 100%;
+        background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      
+    }
+.hero-section{
+    height: 270px;
+    width: 100vw;
+    position: relative;
+
+}
+
+img {     
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-text{
+    position: absolute;
+    top:20%;
+    left:18%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 200px;
+    font-size: 1.25rem;
+
+}
+.hero-text h1 ,span{
+    display: block;
+    text-transform: uppercase;
+    text-align: center;
+}
+.media-icon{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    
+}
+.hero-text > button{
+
+   
+   background-color: red;
+   border: none;
+   color: white;
+   font-size: 1rem;
+   border-radius: 0.50;
+    margin: 0 auto;
+   width: 150px;
+   height: 50px;
+}
+ 
+/* Hero style end */
+/* About me style start */
+
+.about-me{
+    width: 100vw;
+    height: calc(100vh - 100%);
+    background-color: white;
+    color: black;
+    
+    padding: 50px 30px;
+}
+/* portfolio  */
+
+
+.project-container {
+    
+    padding: 5%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+  }
+
+  .card-1{
+    background-color: blueviolet;
+    
+    
+
+  }
+  .card-2{
+    background-color: lightgreen;
+
+  }
+  .card-3{
+    background-color: lightblue;
+
+  }
+  
+  .project-card {
+    margin-bottom: 30px;
+    background-color: rgb(190, 86, 86);
+    height: 400px;
+    width: 100%;
+    
+    
+  }
+
+
+
+/* from 0 to 768 */
+
+@media screen and (min-width: 40em) {
+    .project-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  
+    .project-card {
+      width: 48%;
+      align-items:flex-start;
+    }
+  }
+  
+  @media screen and (min-width: 60em) {
+    
+    .project-card {
+      width: 25%;
+      
+      }
+  }
